@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais - iTrainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .logo-container {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .logo-container::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .logo-container i {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <span class="logo-text">iTrainer</span>
+                </a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="profissionais.html" class="nav-link active">Profissionais</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Nossos Profissionais</h1>
+                <p>Conheça nossa equipe de especialistas em treinamento físico</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section class="professionals-section">
+            <div class="container">
+                <div class="professionals-grid">
+                    <!-- Profissional 1 -->
+                    <div class="professional-card" data-aos="fade-up">
+                        <div class="professional-image">
+                            <img src="images/guilherme-maxwell.jpg" alt="Guilherme Maxwell" loading="lazy">
+                        </div>
+                        <div class="professional-info">
+                            <h3>Guilherme Maxwell</h3>
+                            <p>Especialista em Treinamento Funcional</p>
+                            <div class="professional-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5+ anos de experiência</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>200+ clientes atendidos</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9/5 avaliações</span>
+                                </div>
+                            </div>
+                            <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 2 -->
+                    <div class="professional-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="professional-image">
+                            <img src="WhatsApp%20Image%202025-03-18%20at%2020.37.39.jpeg" alt="Arthur Navarro" loading="lazy">
+                        </div>
+                        <div class="professional-info">
+                            <h3>Arthur Navarro</h3>
+                            <p>Especialista em Musculação</p>
+                            <div class="professional-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>8+ anos de experiência</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>300+ clientes atendidos</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8/5 avaliações</span>
+                                </div>
+                            </div>
+                            <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 3 -->
+                    <div class="professional-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="professional-image">
+                            <img src="WhatsApp%20Image%202025-03-18%20at%2020.38.00.jpeg" alt="Herlon Ferreira" loading="lazy">
+                        </div>
+                        <div class="professional-info">
+                            <h3>Herlon Ferreira</h3>
+                            <p>Especialista em CrossFit</p>
+                            <div class="professional-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6+ anos de experiência</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>250+ clientes atendidos</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9/5 avaliações</span>
+                                </div>
+                            </div>
+                            <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 4 -->
+                    <div class="professional-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="professional-image">
+                            <img src="WhatsApp%20Image%202025-03-18%20at%2021.06.45.jpeg" alt="Caio Antunes" loading="lazy">
+                        </div>
+                        <div class="professional-info">
+                            <h3>Caio Antunes</h3>
+                            <p>Especialista em Yoga e Pilates</p>
+                            <div class="professional-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>7+ anos de experiência</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>180+ clientes atendidos</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7/5 avaliações</span>
+                                </div>
+                            </div>
+                            <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 5 -->
+                    <div class="professional-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="professional-image">
+                            <img src="images/vinicius.jpg" alt="Vinicius Gomes" loading="lazy">
+                        </div>
+                        <div class="professional-info">
+                            <h3>Vinicius Gomes</h3>
+                            <p>Personal Trainer</p>
+                            <div class="professional-stats">
+                                <div class="stat">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 anos de experiência</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>200+ clientes atendidos</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9/5 avaliações</span>
+                                </div>
+                            </div>
+                            <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="iTrainer Logo">
+                    <p>Cuidando da sua saúde desde 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="profissionais.html">Profissionais</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal, 123 - Centro</p>
+                    <p><i class="fas fa-phone"></i> (21) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@iTrainer.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 iTrainer. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

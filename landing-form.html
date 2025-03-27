@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTrainer - Transforme sua vida através do treinamento personalizado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .landing-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--dark-color), var(--darker-color));
+            color: var(--text-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .landing-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('personal header.jpg') center/cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .landing-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .landing-logo {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-container {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .logo-container::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .logo-container i {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .logo-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+        }
+
+        .logo-tagline {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+        }
+
+        .landing-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .landing-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .landing-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: rgba(26, 26, 26, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 4rem;
+            font-size: 1.3rem;
+            background: var(--primary-color);
+            color: var(--dark-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background: var(--secondary-color);
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+        }
+
+        .site-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .site-link:hover {
+            color: var(--primary-color);
+        }
+
+        .landing-footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .social-icon:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .landing-title {
+                font-size: 2.5rem;
+            }
+
+            .landing-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .cta-button {
+                padding: 1rem 3rem;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <div class="landing-content">
+            <div class="landing-logo" data-aos="fade-up">
+                <div class="logo-container">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="logo-text">iTrainer</div>
+            </div>
+            
+            <h1 class="landing-title" data-aos="fade-up" data-aos-delay="100">Transforme sua vida através do treinamento personalizado</h1>
+            <p class="landing-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Descubra o poder do treinamento personalizado com profissionais especializados. 
+                Comece sua jornada fitness hoje mesmo e alcance resultados extraordinários!
+            </p>
+
+            <div class="landing-features">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="feature-title">Treinos Personalizados</h3>
+                    <p class="feature-description">Programas exclusivos adaptados às suas necessidades, objetivos e condição física. Maximize seus resultados com treinos sob medida.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="feature-title">Profissionais Qualificados</h3>
+                    <p class="feature-description">Nossa equipe de especialistas altamente qualificados está pronta para te guiar em cada etapa da sua transformação.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Acompanhamento Completo</h3>
+                    <p class="feature-description">Monitoramento constante do seu progresso, ajustes personalizados e suporte contínuo para garantir seus resultados.</p>
+                </div>
+            </div>
+
+            <div class="cta-section" data-aos="fade-up" data-aos-delay="500">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGeR9KpfswZEHD8a0qnqPG6QAoXNUibdeQduPmDhvqZWGQJg/viewform" class="cta-button">
+                    Comece Agora <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="index.html" class="site-link">
+                    Conheça nosso site completo <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="landing-footer" data-aos="fade-up" data-aos-delay="600">
+                <p>© 2025 iTrainer. Todos os direitos reservados.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
+</body>
+</html> 
