@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Profissional - iTRAINER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <span class="logo-text">iTrainer</span>
+                </a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="profissionais.html" class="nav-link">Profissionais</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cadastro-container">
+        <div class="cadastro-form">
+            <h1>Cadastro de Profissional</h1>
+            <form id="formProfissional" action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="foto">Foto de Perfil</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="especialidades">Especialidades</label>
+                    <div class="search-container">
+                        <input type="text" id="searchEspecialidade" placeholder="Buscar especialidade...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="especialidades-container">
+                        <div class="especialidades-grid">
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="musculacao">
+                                <span>Musculação</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="funcional">
+                                <span>Treino Funcional</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="yoga">
+                                <span>Yoga</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="pilates">
+                                <span>Pilates</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="crossfit">
+                                <span>CrossFit</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="boxe">
+                                <span>Boxe</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="jiu-jitsu">
+                                <span>Jiu-Jitsu</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="natacao">
+                                <span>Natação</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="danca">
+                                <span>Dança</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="meditacao">
+                                <span>Meditação</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="reabilitacao">
+                                <span>Reabilitação</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="especialidades" value="nutricao">
+                                <span>Nutrição Esportiva</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="experiencia">Anos de Experiência</label>
+                    <input type="number" id="experiencia" name="experiencia" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição Pessoal</label>
+                    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preco">Preço por Sessão (R$)</label>
+                    <input type="number" id="preco" name="preco" min="0" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="horarios">Horários Disponíveis</label>
+                    <input type="text" id="horarios" name="horarios" placeholder="Ex: Seg-Sex, 8h-18h" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="localizacao">Localização (Cidade/Estado)</label>
+                    <input type="text" id="localizacao" name="localizacao" required>
+                </div>
+
+                <button type="submit" class="btn-cadastro">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 iTRAINER. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Gomes - Personal Trainer | iTRAINER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <span class="logo-text">iTRAINER</span>
+                </a>
+            </div>
+            <nav class="primary-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissionais.html" class="nav-link">Profissionais</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="btn btn-login">Entrar</a>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="images/vinicius.jpg" alt="Vinicius Gomes">
+                    <div class="profile-status">
+                        <span class="status-indicator online"></span>
+                        <span>Online</span>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Vinicius Gomes</h1>
+                    <p class="profile-title">Personal Trainer</p>
+                    <div class="profile-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">4.9</span>
+                        <span class="reviews-count">(200+ avaliações)</span>
+                    </div>
+                    <div class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo, SP</span>
+                    </div>
+                    <div class="profile-actions">
+                        <a href="#" class="btn btn-primary">Agendar Aula</a>
+                        <a href="#" class="btn btn-secondary">Enviar Mensagem</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-tabs">
+                <button class="tab-btn active" data-tab="sobre">Sobre</button>
+                <button class="tab-btn" data-tab="servicos">Serviços</button>
+                <button class="tab-btn" data-tab="avaliacoes">Avaliações</button>
+                <button class="tab-btn" data-tab="horarios">Horários</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="sobre" class="tab-pane active">
+                    <div class="about-section">
+                        <h2>Sobre Mim</h2>
+                        <p>Personal Trainer com 5 anos de experiência em treinamento personalizado. Especializado em treinamento funcional, musculação e preparação física para competições. Meu objetivo é ajudar meus alunos a alcançarem seus objetivos de forma segura e eficiente.</p>
+                        
+                        <div class="qualifications">
+                            <h3>Qualificações</h3>
+                            <ul>
+                                <li><i class="fas fa-graduation-cap"></i> Bacharel em Educação Física - USP</li>
+                                <li><i class="fas fa-certificate"></i> Certificado em Treinamento Funcional - CREF</li>
+                                <li><i class="fas fa-medal"></i> Especialista em Preparação Física</li>
+                            </ul>
+                        </div>
+
+                        <div class="specialties">
+                            <h3>Especialidades</h3>
+                            <div class="specialties-grid">
+                                <span class="specialty-tag">Treinamento Funcional</span>
+                                <span class="specialty-tag">Musculação</span>
+                                <span class="specialty-tag">Preparação Física</span>
+                                <span class="specialty-tag">Reabilitação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="servicos" class="tab-pane">
+                    <div class="services-section">
+                        <h2>Serviços</h2>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <i class="fas fa-dumbbell service-icon"></i>
+                                <h3>Treino Personalizado</h3>
+                                <p>Treinos individuais adaptados às suas necessidades e objetivos.</p>
+                                <div class="service-price">
+                                    <span>R$ 120,00</span>
+                                    <span>/aula</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Agendar</a>
+                            </div>
+                            <div class="service-card">
+                                <i class="fas fa-users service-icon"></i>
+                                <h3>Treino em Dupla</h3>
+                                <p>Treinos para duas pessoas, ideal para casais ou amigos.</p>
+                                <div class="service-price">
+                                    <span>R$ 80,00</span>
+                                    <span>/pessoa/aula</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Agendar</a>
+                            </div>
+                            <div class="service-card">
+                                <i class="fas fa-calendar-alt service-icon"></i>
+                                <h3>Pacote Mensal</h3>
+                                <p>12 aulas por mês com desconto especial.</p>
+                                <div class="service-price">
+                                    <span>R$ 1.000,00</span>
+                                    <span>/mês</span>
+                                </div>
+                                <a href="#" class="btn btn-primary">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="avaliacoes" class="tab-pane">
+                    <div class="reviews-section">
+                        <h2>Avaliações</h2>
+                        <div class="reviews-summary">
+                            <div class="rating-overview">
+                                <div class="overall-rating">
+                                    <span class="rating-value">4.9</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span>Baseado em 200+ avaliações</span>
+                                </div>
+                                <div class="rating-bars">
+                                    <div class="rating-bar">
+                                        <span>5 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>4 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 10%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>3 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 3%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>2 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 1%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>1 estrela</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 1%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <img src="images/cliente1.jpg" alt="Cliente">
+                                        <div>
+                                            <h4>Carlos Silva</h4>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">2 semanas atrás</span>
+                                </div>
+                                <p class="review-text">Excelente profissional! O Vinicius me ajudou a alcançar meus objetivos de forma rápida e segura. Super recomendo!</p>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <img src="images/cliente2.jpg" alt="Cliente">
+                                        <div>
+                                            <h4>Ana Oliveira</h4>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">1 mês atrás</span>
+                                </div>
+                                <p class="review-text">Treino com o Vinicius há 6 meses e já vi resultados incríveis. Ele é muito atencioso e profissional!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="horarios" class="tab-pane">
+                    <div class="schedule-section">
+                        <h2>Horários Disponíveis</h2>
+                        <div class="schedule-calendar">
+                            <div class="calendar-header">
+                                <h3>Agosto 2024</h3>
+                                <div class="calendar-nav">
+                                    <button><i class="fas fa-chevron-left"></i></button>
+                                    <button><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="calendar-day">
+                                    <span class="day-number">Segunda</span>
+                                    <div class="time-slots">
+                                        <div class="time-slot available">08:00</div>
+                                        <div class="time-slot available">09:00</div>
+                                        <div class="time-slot booked">10:00</div>
+                                        <div class="time-slot available">11:00</div>
+                                        <div class="time-slot available">14:00</div>
+                                        <div class="time-slot available">15:00</div>
+                                        <div class="time-slot booked">16:00</div>
+                                        <div class="time-slot available">17:00</div>
+                                    </div>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-number">Terça</span>
+                                    <div class="time-slots">
+                                        <div class="time-slot available">08:00</div>
+                                        <div class="time-slot available">09:00</div>
+                                        <div class="time-slot available">10:00</div>
+                                        <div class="time-slot booked">11:00</div>
+                                        <div class="time-slot available">14:00</div>
+                                        <div class="time-slot available">15:00</div>
+                                        <div class="time-slot available">16:00</div>
+                                        <div class="time-slot booked">17:00</div>
+                                    </div>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-number">Quarta</span>
+                                    <div class="time-slots">
+                                        <div class="time-slot available">08:00</div>
+                                        <div class="time-slot booked">09:00</div>
+                                        <div class="time-slot available">10:00</div>
+                                        <div class="time-slot available">11:00</div>
+                                        <div class="time-slot available">14:00</div>
+                                        <div class="time-slot booked">15:00</div>
+                                        <div class="time-slot available">16:00</div>
+                                        <div class="time-slot available">17:00</div>
+                                    </div>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-number">Quinta</span>
+                                    <div class="time-slots">
+                                        <div class="time-slot available">08:00</div>
+                                        <div class="time-slot available">09:00</div>
+                                        <div class="time-slot available">10:00</div>
+                                        <div class="time-slot booked">11:00</div>
+                                        <div class="time-slot available">14:00</div>
+                                        <div class="time-slot available">15:00</div>
+                                        <div class="time-slot available">16:00</div>
+                                        <div class="time-slot booked">17:00</div>
+                                    </div>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-number">Sexta</span>
+                                    <div class="time-slots">
+                                        <div class="time-slot available">08:00</div>
+                                        <div class="time-slot available">09:00</div>
+                                        <div class="time-slot booked">10:00</div>
+                                        <div class="time-slot available">11:00</div>
+                                        <div class="time-slot available">14:00</div>
+                                        <div class="time-slot available">15:00</div>
+                                        <div class="time-slot booked">16:00</div>
+                                        <div class="time-slot available">17:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="schedule-legend">
+                                <div class="legend-item">
+                                    <div class="legend-color available"></div>
+                                    <span>Disponível</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color booked"></div>
+                                    <span>Indisponível</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Redes Sociais e Integração -->
+    <section class="social-integration">
+        <div class="container">
+            <h2 class="section-title">Redes Sociais</h2>
+            <div class="social-content">
+                <div class="social-links">
+                    <h3>Siga o Vinicius</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/viniciusgomes_pt" class="social-icon instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <div class="social-text">
+                                <span class="social-name">Instagram</span>
+                                <span class="social-username">@viniciusgomes_pt</span>
+                            </div>
+                        </a>
+                        <a href="https://youtube.com/viniciusgomes" class="social-icon youtube" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                            <div class="social-text">
+                                <span class="social-name">YouTube</span>
+                                <span class="social-username">Vinicius Gomes</span>
+                            </div>
+                        </a>
+                        <a href="https://tiktok.com/@viniciusgomes_pt" class="social-icon tiktok" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                            <div class="social-text">
+                                <span class="social-name">TikTok</span>
+                                <span class="social-username">@viniciusgomes_pt</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="instagram-feed">
+                    <h3>Últimos Posts</h3>
+                    <div class="feed-grid">
+                        <div class="feed-item">
+                            <img src="https://via.placeholder.com/300" alt="Post do Instagram">
+                            <div class="feed-overlay">
+                                <i class="fab fa-instagram"></i>
+                                <span>Ver no Instagram</span>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://via.placeholder.com/300" alt="Post do Instagram">
+                            <div class="feed-overlay">
+                                <i class="fab fa-instagram"></i>
+                                <span>Ver no Instagram</span>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <img src="https://via.placeholder.com/300" alt="Post do Instagram">
+                            <div class="feed-overlay">
+                                <i class="fab fa-instagram"></i>
+                                <span>Ver no Instagram</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="iTRAINER Logo">
+                <p>Transformando vidas através do fitness</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="profissionais.html">Profissionais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> contato@itrainer.com</p>
+                <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 iTRAINER. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html> 

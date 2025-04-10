@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Navarro - iTrainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <span class="logo-text">iTrainer</span>
+                </a>
+            </div>
+            <nav class="primary-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="profissionais.html" class="nav-link">Profissionais</a></li>
+                    <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-login">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="WhatsApp%20Image%202025-03-18%20at%2020.37.39.jpeg" alt="Arthur Navarro">
+                    <div class="profile-status">
+                        <span class="status-indicator offline"></span>
+                        Offline
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Arthur Navarro</h1>
+                    <p class="profile-title">Especialista em Musculação</p>
+                    <div class="profile-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">4.8</span>
+                        <span class="reviews-count">(300+ avaliações)</span>
+                    </div>
+                    <div class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Rio de Janeiro, RJ
+                    </div>
+                    <div class="profile-actions">
+                        <button class="btn btn-primary">Agendar Consulta</button>
+                        <button class="btn btn-secondary">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-tabs">
+                <button class="tab-btn active" data-tab="sobre">Sobre</button>
+                <button class="tab-btn" data-tab="servicos">Serviços</button>
+                <button class="tab-btn" data-tab="avaliacoes">Avaliações</button>
+                <button class="tab-btn" data-tab="horarios">Horários</button>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="sobre">
+                    <div class="about-section">
+                        <h2>Sobre Mim</h2>
+                        <p>Com 8 anos de experiência em musculação e treinamento de força, dedico-me a ajudar meus clientes a alcançarem seus objetivos de forma segura e eficiente. Minha metodologia combina técnicas avançadas de musculação com acompanhamento nutricional para maximizar resultados.</p>
+                        
+                        <h3>Qualificações</h3>
+                        <ul class="qualifications">
+                            <li><i class="fas fa-graduation-cap"></i> Bacharel em Educação Física - UFRJ</li>
+                            <li><i class="fas fa-certificate"></i> Especialista em Musculação - CREF</li>
+                            <li><i class="fas fa-medal"></i> Campeão Brasileiro de Fisiculturismo 2020</li>
+                            <li><i class="fas fa-book"></i> Nutrição Esportiva - IPEN</li>
+                        </ul>
+
+                        <h3>Especialidades</h3>
+                        <div class="specialties-grid">
+                            <span class="specialty-tag">Musculação</span>
+                            <span class="specialty-tag">Hipertrofia</span>
+                            <span class="specialty-tag">Força</span>
+                            <span class="specialty-tag">Nutrição Esportiva</span>
+                            <span class="specialty-tag">Preparação Física</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="servicos">
+                    <div class="services-section">
+                        <h2>Serviços Oferecidos</h2>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <i class="fas fa-dumbbell service-icon"></i>
+                                <h3>Musculação Personal</h3>
+                                <p>Treinamento individualizado de musculação adaptado ao seu nível.</p>
+                                <div class="service-price">
+                                    <span>R$ 150</span>
+                                    <span>/hora</span>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <i class="fas fa-utensils service-icon"></i>
+                                <h3>Planejamento Nutricional</h3>
+                                <p>Plano alimentar personalizado para otimizar seus resultados.</p>
+                                <div class="service-price">
+                                    <span>R$ 200</span>
+                                    <span>/mês</span>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <i class="fas fa-users service-icon"></i>
+                                <h3>Treino em Grupo</h3>
+                                <p>Aulas de musculação em grupo com até 5 pessoas.</p>
+                                <div class="service-price">
+                                    <span>R$ 80</span>
+                                    <span>/aula</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="avaliacoes">
+                    <div class="reviews-section">
+                        <h2>Avaliações dos Clientes</h2>
+                        <div class="reviews-summary">
+                            <div class="rating-overview">
+                                <div class="overall-rating">
+                                    <span class="rating-value">5.0</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="rating-bars">
+                                    <div class="rating-bar">
+                                        <span>5 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>4 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 8%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>3 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 2%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>2 estrelas</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span>1 estrela</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente">
+                                        <div>
+                                            <h4>Pedro Santos</h4>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">3 semanas atrás</span>
+                                </div>
+                                <p class="review-text">O Arthur é um profissional excepcional! Suas aulas de CrossFit são desafiadoras e motivadoras. Em 4 meses já notei uma melhora significativa na minha resistência e força.</p>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente">
+                                        <div>
+                                            <h4>Mariana Costa</h4>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">1 mês atrás</span>
+                                </div>
+                                <p class="review-text">Melhor treinador de CrossFit que já tive! O Arthur tem uma didática incrível e sabe adaptar os exercícios para todos os níveis. Super recomendo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="horarios">
+                    <div class="schedule-section">
+                        <h2>Horários Disponíveis</h2>
+                        <div class="schedule-calendar">
+                            <div class="calendar-header">
+                                <h3>Agosto 2024</h3>
+                                <div class="calendar-nav">
+                                    <button class="prev-month"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="next-month"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="calendar-day">
+                                    <span class="day-number">15</span>
+                                    <div class="time-slots">
+                                        <div class="time-slot booked">08:00</div>
+                                        <div class="time-slot available">09:00</div>
+                                        <div class="time-slot available">10:00</div>
+                                        <div class="time-slot booked">11:00</div>
+                                    </div>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-number">16</span>
+                                    <div class="time-slots">
+                                        <div class="time-slot available">08:00</div>
+                                        <div class="time-slot booked">09:00</div>
+                                        <div class="time-slot available">10:00</div>
+                                        <div class="time-slot available">11:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="schedule-legend">
+                                <div class="legend-item">
+                                    <div class="legend-color available"></div>
+                                    <span>Disponível</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color booked"></div>
+                                    <span>Indisponível</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="iTrainer Logo">
+                <p>Transformando vidas através do fitness</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="profissionais.html">Profissionais</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> contato@itrainer.com</p>
+                <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 iTrainer. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html> 

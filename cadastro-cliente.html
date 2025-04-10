@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente - iTRAINER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <span class="logo-text">iTrainer</span>
+                </a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="profissionais.html" class="nav-link">Profissionais</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="login.html" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cadastro-container">
+        <div class="cadastro-form">
+            <h1>Cadastro de Cliente</h1>
+            <form id="formCliente" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="objetivos">Objetivos de Treino</label>
+                    <div class="search-container">
+                        <input type="text" id="searchObjetivo" placeholder="Buscar objetivo...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="especialidades-container">
+                        <div class="especialidades-grid">
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="objetivos" value="emagrecimento">
+                                <span>Emagrecimento</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="objetivos" value="hipertrofia">
+                                <span>Hipertrofia</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="objetivos" value="condicionamento">
+                                <span>Condicionamento Físico</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="objetivos" value="reabilitacao">
+                                <span>Reabilitação</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="objetivos" value="saude">
+                                <span>Saúde e Bem-estar</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nivel">Nível de Atividade Física</label>
+                    <select id="nivel" name="nivel" required>
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="restricoes">Restrições Médicas</label>
+                    <textarea id="restricoes" name="restricoes" rows="3" placeholder="Descreva qualquer restrição médica ou lesão prévia"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferencias">Preferências de Treino</label>
+                    <div class="search-container">
+                        <input type="text" id="searchPreferencia" placeholder="Buscar preferência...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="especialidades-container">
+                        <div class="especialidades-grid">
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="preferencias" value="musculacao">
+                                <span>Musculação</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="preferencias" value="funcional">
+                                <span>Treino Funcional</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="preferencias" value="yoga">
+                                <span>Yoga</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="preferencias" value="pilates">
+                                <span>Pilates</span>
+                            </label>
+                            <label class="especialidade-item">
+                                <input type="checkbox" name="preferencias" value="crossfit">
+                                <span>CrossFit</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="disponibilidade">Disponibilidade de Horários</label>
+                    <input type="text" id="disponibilidade" name="disponibilidade" placeholder="Ex: Seg-Sex, 8h-18h" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="localizacao">Localização (Cidade/Estado)</label>
+                    <input type="text" id="localizacao" name="localizacao" required>
+                </div>
+
+                <button type="submit" class="btn-cadastro">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 iTRAINER. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

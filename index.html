@@ -28,11 +28,11 @@
             
             <nav class="primary-navigation" id="primary-navigation">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
                     <li class="nav-item"><a href="profissionais.html" class="nav-link">Profissionais</a></li>
                     <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
                     <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-link btn-login">Login</a></li>
+                    <li class="nav-item"><a href="login.html" class="btn-login">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -168,6 +168,55 @@
         </section>
     </main>
 
+    <!-- Seção de Suporte ao Cliente -->
+    <section class="support-section" id="support-section">
+        <div class="container">
+            <h2 class="section-title">Suporte ao Cliente</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Atendimento 24/7</h3>
+                    <p>Nossa equipe está disponível para ajudar você a qualquer momento.</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Chat Online</h3>
+                    <p>Converse com nossos atendentes em tempo real.</p>
+                    <button class="btn btn-primary" id="openChat">Iniciar Chat</button>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>Envie suas dúvidas para: suporte@itrainer.com</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <p>Ligue para: (11) 99999-9999</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Chat -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-header">
+            <h3>Suporte ao Cliente</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <div class="message support">
+                    <p>Olá! Como posso ajudar você hoje?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Digite sua mensagem...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -205,6 +254,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Botão Flutuante de Suporte -->
+    <a href="#support-section" class="support-float-button">
+        <i class="fas fa-headset"></i>
+        <span>Suporte</span>
+    </a>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
